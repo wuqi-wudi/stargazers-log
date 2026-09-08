@@ -1,0 +1,34 @@
+[
+  {
+    "name": "github/docs",
+    "description": "Open-source documentation for GitHub developers.",
+    "language": "Markdown",
+    "stars": 17200,
+    "starredAt": "2026-09-04",
+    "url": "https://github.com/github/docs"
+  },
+  {
+    "name": "microsoft/TypeScript",
+    "description": "A programming language for application-scale JavaScript development.",
+    "language": "TypeScript",
+    "stars": 104000,
+    "starredAt": "2026-08-28",
+    "url": "https://github.com/microsoft/TypeScript"
+  },
+  {
+    "name": "sindresorhus/awesome",
+    "description": "A curated list of awesome lists.",
+    "language": "Markdown",
+    "stars": 390000,
+    "starredAt": "2026-08-19",
+    "url": "https://github.com/sindresorhus/awesome"
+  },
+  {
+    "name": "vitejs/vite",
+    "description": "Next generation frontend tooling.",
+    "language": "JavaScript",
+    "stars": 78000,
+    "starredAt": "2026-08-11",
+    "url": "https://github.com/vitejs/vite"
+  }
+]
