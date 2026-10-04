@@ -5,8 +5,7 @@ int main(void){
     scanf("%d",&num);
     num1 = num;
     while(num != 0){
-        reverse *= 10;
-    reverse += num%10;
+    reverse = reverse*10 + num%10;
     num /= 10;
     printf("%d",reverse);
 }
