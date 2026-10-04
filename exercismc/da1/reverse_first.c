@@ -29,19 +29,13 @@ int main(){
         a /= 10;
         //num变成了最初输入的数字（num turn into inital input number)
         num = num_1;
-    while(x != 0){
+    while(num != 0){
         //处理数中的零（deal with zero in number)
         //num>10、num<-10保证不陷入无限循环（num>10、num<-10 guarantee don't get into infinite circulation)
-        if((num % 10==0 && num>=10)||(num % 10==0&& num<=-10) ){
-            num /= 10;
-            a/=10;
-        }
-        else{
             x= num % 10 * a;
             a /= 10;
             num /= 10;
             reverse += x;}
-        }    
         printf("%d的逆序是%d",num_1,reverse);
         return 0;    
     }
