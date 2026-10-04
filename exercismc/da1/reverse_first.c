@@ -32,10 +32,16 @@ int main(){
     while(num != 0){
         //处理数中的零（deal with zero in number)
         //num>10、num<-10保证不陷入无限循环（num>10、num<-10 guarantee don't get into infinite circulation)
+        if((num % 10==0 && num>=10)||(num % 10==0&& num<=-10) ){
+            num /= 10;
+            a/=10;
+        }
+        else{
             x= num % 10 * a;
             a /= 10;
             num /= 10;
             reverse += x;}
+        }    
         printf("%d的逆序是%d",num_1,reverse);
         return 0;    
     }
