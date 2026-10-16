@@ -8,29 +8,31 @@ int main(void){
     scanf("%d",&num);
     if(num<2){
         printf("%d不是素数",num);
+        return 0;
     }
     //处理2和3（handle 2 and 3 ,which are prime numbers)
     else if(num==2||num==3){
         printf("%d是素数",num);
+        return 0;
     }
     //用2和3验证节约时间（save time by pre-checking divisibility by 2 and 3)
     else if(num%2==0){
         printf("%d不是素数",num);
+        return 0;
     }
     else if(num%3==0){
         printf("%d不是素数",num);
+        return 0;
     }
     else{
         //这利用了如果i加到了num,她就是素数（if the loop runs all the ways to num ,the num is prime number)
-        for(int i=5;i<=num;i+=2){
-            if(num%i==0&&i<num){
+        for(int i=5;i*i<=num;i+=2){
+            if(num%i==0){
                 printf("%d这个数不是素数",num);
-                break;
-            }
-            if(i==num) {
-                printf("%d是素数",num);
+                return 0;
             }
         }
+        printf("%d是素数",num);
     }
     return 0;
 }
